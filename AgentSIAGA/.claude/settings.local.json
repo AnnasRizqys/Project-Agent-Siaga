@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5173/assets/kapten-idle.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5173/assets/kapten-success.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5173/assets/kapten-error.png)",
+      "Bash(netstat -ano)",
+      "Bash(powershell -Command \"\\(Invoke-WebRequest -Uri http://localhost:3000 -UseBasicParsing -TimeoutSec 5\\).StatusCode\")",
+      "Bash(npx tsc *)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
